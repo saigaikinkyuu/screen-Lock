@@ -42,7 +42,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 function setPass(){
-  $.getJSON("https://script.google.com/macros/s/AKfycbxOFLC9LnmR34UiRXRx8bgOd8XGF1xVBT0uSA6J0DqwEtBbwf0enPj2BUbwWoyTO-Kl/exec?k=check" + number_pass, function (data) {
+  $.getJSON("https://script.google.com/macros/s/AKfycbxOFLC9LnmR34UiRXRx8bgOd8XGF1xVBT0uSA6J0DqwEtBbwf0enPj2BUbwWoyTO-Kl/exec?k=lock", function (data) {
     if(data.sattus === "Success"){
       console.log("ワンタイム・パスコードを発行しました。")
     }
