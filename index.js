@@ -18,3 +18,11 @@ function iconChange(flag){
     document.getElementById("icon").textContetn = "lock_open"
   }
 }
+checkFullScreen()
+
+document.addEventListener('keydown', function(event) {
+  // 例: F5キーの更新を無効化
+  if (event.keyCode === 115) {
+    event.preventDefault();
+  }
+});
