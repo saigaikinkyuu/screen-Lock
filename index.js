@@ -3,6 +3,7 @@ function checkFullScreen() {
   if (document.fullscreenElement) {
     iconChange(false)
   } else {
+    const documentElement = document.documentElement;
     documentElement.requestFullscreen();
     iconChange(true)
   }
