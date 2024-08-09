@@ -15,12 +15,11 @@ document.addEventListener('fullscreenchange', () => {
 
 function iconChange(flag){
   if(flag === true){
-    document.getElementById("icon").textContetn = "lock"
+    document.getElementById("icon").textContent = "lock"
   }else {
-    document.getElementById("icon").textContetn = "lock_open"
+    document.getElementById("icon").textContent = "lock_open"
   }
 }
-checkFullScreen()
 
 document.addEventListener('keydown', function(event) {
   // 例: F5キーの更新を無効化
@@ -48,4 +47,8 @@ function setPass(){
       console.log("ワンタイム・パスコードを発行しました。")
     }
   })
+}
+
+function setFullScreen(){
+  checkFullScreen()
 }
