@@ -15,9 +15,11 @@ document.addEventListener('fullscreenchange', () => {
 
 function iconChange(flag){
   if(flag === true){
-    document.getElementById("icon").textContent = "lock"
+    document.getElementById("icon-lock").style.display = "block"
+    document.getElementById("icon-unlock").style.display = "none"
   }else {
-    document.getElementById("icon").textContent = "lock_open"
+    document.getElementById("icon-lock").style.display = "none"
+    document.getElementById("icon-unlock").style.display = "block"
   }
 }
 
